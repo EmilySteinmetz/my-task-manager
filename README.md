@@ -1,36 +1,127 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# My Task Manager
 
-## Getting Started
+## Project Description
 
-First, run the development server:
+My Task Manager is a productivity application built with Next.js, React, and Tailwind CSS. It allows users to create, organize, and manage daily tasks through an interactive interface. Tasks are automatically saved using localStorage, so they remain available even after refreshing the browser.
+
+---
+
+## Features
+
+- Add new tasks with input validation
+- Mark tasks as complete or incomplete
+- Delete individual tasks
+- Filter tasks by All, Active, or Done
+- View live task statistics
+- Clear all completed tasks with one click
+- Persist tasks using localStorage
+
+---
+
+## Technologies Used
+
+- Next.js 16
+- React 19
+- Tailwind CSS v4
+- JavaScript
+- HTML
+- CSS
+
+---
+
+## Project Structure
+
+```
+src/
+├── app/
+│   ├── globals.css
+│   ├── layout.js
+│   └── page.js
+│
+└── components/
+    ├── AddTaskForm.js
+    ├── TaskBoard.js
+    ├── TaskCard.js
+    ├── TaskList.js
+    └── TaskStats.js
+```
+
+---
+
+## Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/EmilySteinmetz/my-task-manager.git
+```
+
+Navigate into the project:
+
+```bash
+cd my-task-manager
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open your browser to:
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+```
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## Design Decisions
 
-To learn more about Next.js, take a look at the following resources:
+I chose a dark productivity dashboard design with rounded cards, blue accent buttons, and a clean layout. The interface is intentionally different from the workshop example by using a darker color palette, larger spacing, customized buttons, and a modern card-based layout.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## React Concepts Demonstrated
 
-## Deploy on Vercel
+- React Components
+- Props
+- useState
+- useEffect
+- Controlled Forms
+- Conditional Rendering
+- Event Handling
+- Immutable State Updates
+- Array map()
+- Array filter()
+- Local Storage
+- Derived State
+- Component Composition
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## AI Usage Log
+
+AI was used as a learning and debugging tool throughout this project.
+
+- Used AI to better understand the project requirements and break the assignment into manageable steps.
+- Used AI to explain React concepts such as state, props, controlled components, localStorage, and immutable updates.
+- Used AI to troubleshoot coding errors and understand why they occurred instead of simply replacing the code.
+- Used AI to improve the visual design with Tailwind CSS while keeping the project different from the workshop example.
+- Used AI to review and improve code comments so they explain why the code works rather than only describing what it does.
+
+---
+
+## Author
+
+Emily Steinmetz
+
+University of South Florida
+
+Summer 2026
